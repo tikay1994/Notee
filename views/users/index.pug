@@ -1,0 +1,22 @@
+extends ../layouts/design.pug
+block content
+ h1 Users
+
+ a(href='/users/create') Create
+
+ form(action="/users/search", method="GET", class="d-flex")
+  input(class="form-control", type="text", name="q")
+  button(class="btn btn-outline-danger ml-2") search
+
+ table.table
+  tr
+   th Name
+   th Phone
+   th Information
+
+  each user in users
+   tr
+    td=user.name
+    td=user.phone
+    td 
+     a.btn.btn-primary(href='/users/' + user.id) View

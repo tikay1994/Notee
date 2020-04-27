@@ -1,0 +1,18 @@
+extends ../layouts/design.pug
+block content
+ h1 TodoLists
+
+ a(href='/todo/create') Create
+
+
+ table.table
+  tr
+   th STT
+   th Title
+   th Description
+
+  each todo in todos
+   tr
+    td=todo.id
+    td=todo.title
+    td=todo.description

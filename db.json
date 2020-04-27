@@ -1,0 +1,83 @@
+{
+  "users": [
+    {
+      "name": "Lam",
+      "id": "S6IclP_d6",
+      "email": "lam@123.com",
+      "password": "123456"
+    },
+    {
+      "name": "Vai",
+      "phone": "012345",
+      "id": "o0muNlNzF",
+      "email": "vai@123.com",
+      "password": "123456"
+    },
+    {
+      "name": "Linh",
+      "phone": "123234556",
+      "id": "J7-75ZePI",
+      "email": "linh@123.com",
+      "password": "123456"
+    },
+    {
+      "name": "Nghĩa",
+      "phone": "0123456789",
+      "id": "Di2QHxFW6",
+      "email": "nghia@123.com",
+      "password": "123456"
+    }
+  ],
+  "todoLists": [
+    {
+      "id": 1,
+      "title": "Engineer I",
+      "description": "rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at"
+    },
+    {
+      "id": 2,
+      "title": "Systems Administrator IV",
+      "description": "ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis"
+    },
+    {
+      "id": 3,
+      "title": "Account Coordinator",
+      "description": "nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue"
+    },
+    {
+      "id": 4,
+      "title": "Research Assistant II",
+      "description": "id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada"
+    },
+    {
+      "id": 5,
+      "title": "Engineer I",
+      "description": "nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam"
+    },
+    {
+      "id": 6,
+      "title": "Design Engineer",
+      "description": "pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum"
+    },
+    {
+      "id": 7,
+      "title": "Systems Administrator I",
+      "description": "sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper"
+    },
+    {
+      "id": 8,
+      "title": "Financial Analyst",
+      "description": "purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique tortor eu pede"
+    },
+    {
+      "id": 9,
+      "title": "Programmer Analyst II",
+      "description": "sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio"
+    },
+    {
+      "id": 10,
+      "title": "Compensation Analyst",
+      "description": "dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut"
+    }
+  ]
+}
