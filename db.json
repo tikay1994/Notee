@@ -1,4 +1,11 @@
 {
+  "admin": [
+    {
+      "email": "kiet@admin.com",
+      "password": "8792102",
+      "id": "asdasdfgghthfg"
+    }
+  ],
   "users": [
     {
       "name": "Lam",
@@ -26,6 +33,13 @@
       "id": "Di2QHxFW6",
       "email": "nghia@123.com",
       "password": "123456"
+    },
+    {
+      "name": "Kiet",
+      "email": "kiet@123.com",
+      "password": "8792102",
+      "repeat": "8792102",
+      "id": "qw-Sx1Z48"
     }
   ],
   "todoLists": [
@@ -78,6 +92,11 @@
       "id": 10,
       "title": "Compensation Analyst",
       "description": "dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut"
+    },
+    {
+      "title": "Shopping",
+      "description": "10:10 am on Sunday",
+      "id": "fZivpJARB"
     }
   ]
 }

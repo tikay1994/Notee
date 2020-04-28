@@ -2,7 +2,6 @@ extends ../layouts/design.pug
 block content
  h1 Users
 
- a(href='/users/create') Create
 
  form(action="/users/search", method="GET", class="d-flex")
   input(class="form-control", type="text", name="q")
@@ -17,6 +16,6 @@ block content
   each user in users
    tr
     td=user.name
-    td=user.phone
+    td=user.email
     td 
      a.btn.btn-primary(href='/users/' + user.id) View

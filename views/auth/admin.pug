@@ -3,9 +3,8 @@ block content
  h1 Login User
  if error
    .alert.alert-danger=error
- a(href='/users/create') Register
 
- form(action="/auth/login", method="POST", class="d-flex")
+ form(action="/auth/admin", method="POST", class="d-flex")
   label(for="email") Email
   input#email(class="form-control ml-2 mr-2", name="email", type="text", value=values ? values.email : "")
   label(for="password") Password

@@ -27,5 +27,34 @@ module.exports.postLogin = function (req, res) {
   res.cookie("userId", user.id, {
     signed: true,
   });
+  res.redirect("/todo");
+};
+
+module.exports.loginAdmin = function (req, res) {
+  res.render("auth/admin");
+};
+
+module.exports.postLoginAdmin = function (req, res) {
+  var email = req.body.email;
+  var password = req.body.password;
+  var admin = db.get("admin").find({ email: email }).value();
+
+  if (!admin) {
+    res.render("auth/admin", {
+      error: ["User was wrong"],
+      values: req.body,
+    });
+    return;
+  }
+  if (admin.password !== password) {
+    res.render("auth/admin", {
+      error: ["Password was wrong"],
+      values: req.body,
+    });
+    return;
+  }
+  res.cookie("adminId", admin.id, {
+    signed: true,
+  });
   res.redirect("/users");
 };

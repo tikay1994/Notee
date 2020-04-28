@@ -5,8 +5,12 @@ block content
   each error in errors
    .alert.alert-danger=error
  form(action="/users/create", method="POST", class="d-flex")
-  label(for="name") Name
-  input#name(class="form-control ml-2 mr-2", name="name", type="text", value=values ? values.name : "")
-  label(for="phone") Phone
-  input#phone(class="form-control ml-2 mr-2", name="phone", type="text", value=values ? values.phone : "")
+  label(for="name")
+  input#name(class="form-control ml-2 mr-2", placeholder="Name", name="name", type="text", value=values ? values.name : "")
+  label(for="email")
+  input#email(class="form-control ml-2 mr-2",placeholder="Email", name="email", type="text", value=values ? values.email : "")
+  label(for="password")
+  input#password(class="form-control ml-2 mr-2",placeholder="Password", name="password", type="password", value=values ? values.password : "")
+  label(for="repeat")
+  input#repeat(class="form-control ml-2 mr-2",placeholder="Repeat", name="repeat", type="password")
   button(class="btn btn-outline-danger") Create
