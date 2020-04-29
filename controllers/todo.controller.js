@@ -1,9 +1,14 @@
+var Todo = require("../models/todo.model");
 var db = require("../db.js");
 var shortid = require("shortid");
 
-module.exports.todo = function (req, res) {
-  res.render("todo", {
-    todos: db.get("todoLists").value(),
+module.exports.todo = async function (req, res) {
+  // res.render("todo", {
+  //   todos: db.get("todoLists").value(),
+  // });
+  var todoLists = await Todo.find();
+  res.render("todo/index", {
+    todoLists: todoLists,
   });
 };
 

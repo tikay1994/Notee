@@ -1,9 +1,18 @@
+var db = require("../db");
+
 var shortid = require("shortid");
+
 module.exports = function (req, res, next) {
   if (!req.signedCookies.sessionId) {
-    res.cookie("sessionId", shortid.generate(), {
+    var sessionId = shortid.generate();
+    res.cookie("sessionId", sessionId, {
       signed: true,
     });
-    next();
+    db.get("sessions")
+      .push({
+        id: sessionId,
+      })
+      .write();
   }
+  next();
 };
